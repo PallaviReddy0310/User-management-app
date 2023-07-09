@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import { loginContext } from '../../contexts/loginContext';
+import { loginContext } from '../../Contexts/loginContext';
 import './userprofile.css';
 import {NavLink,Outlet} from 'react-router-dom';
 
@@ -9,17 +9,17 @@ function UserProfile() {
 
   const activeLink = {
     color: "red",
-    fontSize: "1.2rem",
+    fontSize: "1.4rem",
     fontWeight: "bold",
   };
 
   const inactiveLink = {
     color: "black",
-    fontSize: "1.2rem"
+    fontSize: "1.4rem"
   };
   return (
     <div>
-      <p className='display-5 text-center'>Welcome</p>
+      <p className='display-5 text-center'>Welcome, {currentUser.username} <img src={currentUser.image} width='130px' className='profilepic float-end' /></p>
       <ul className="nav justify-content-around">
       <li className="nav-item">
               <NavLink

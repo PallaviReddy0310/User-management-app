@@ -35,9 +35,9 @@ mclient.connect('mongodb://127.0.0.1:27017')
 .catch(err=>console.log('Error in connecting dataBase : ',err))
 
 //import userApi
-let usersAPI= require('../new_app/APIS/UserAPI');
+let UserAPI= require('../new_app/APIS/UserAPI');
 
-app.use('/users-api',usersAPI);
+app.use('/users-api',UserAPI);
 
 //middleware for page refresh
 const pageRefresh= (request,response,next)=>{

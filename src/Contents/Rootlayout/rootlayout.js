@@ -11,7 +11,9 @@ function RootLayout(){
       <Navigationbar />
 
       {/*Content*/}
-      <Outlet />
+      <div style={{minHeight:'72vh'}}>
+        <Outlet />
+      </div>
 
       {/*Footer*/}
       <Footer />

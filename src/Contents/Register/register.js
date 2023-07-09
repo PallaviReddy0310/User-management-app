@@ -44,14 +44,14 @@ function Register() {
       }
     })
   }
-
+  
   return (
-    <div className='container-fluid mx-3'>
-      <p className='display-5'>Add New User</p>
-      {err.length!==0 && <p className='display-4 text-danger'>{err}</p>}
+    <div className='container-fluid mx-3 mx-auto'>
+      <p className='display-5 text-center'>Add New User</p>
+      {err.length!==0 && <p className='display-4 text-danger text-center'>{err}</p>}
       <div className='row'>
-        <div className='col col-11 col-sm-8 col-md-6'>
-      <form onSubmit={handleSubmit(submitForm)}>
+        <div className='mx-auto col col-11 col-sm-8 col-md-6'>
+      <form onSubmit={handleSubmit(submitForm)} className='mx-auto'>
         <div>
         <label>Username</ label>
         <input type='text' id='username' className='form-control mb-2' {...register('username',{required:true,minLength:'6',maxLength:'15'})} />

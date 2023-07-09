@@ -32,12 +32,12 @@ function Login() {
   },[userLoginStatus])
 
   return (
-    <div className="add-user mx-5">
-     <p className='display-5'>Login</p>
-     {error.length!==0 && (<p className="display-5 text-danger">{error}</p>)}
+    <div className="add-user mx-auto">
+     <p className='display-5 text-center'>Login</p>
+     {error.length!==0 && (<p className="display-5 text-danger text-center">{error}</p>)}
       {/* add user form */}
       <div className="row">
-        <div className="col-11 col-sm-8 col-md-6">
+        <div className="mx-auto col-11 col-sm-8 col-md-6">
           <form onSubmit={handleSubmit(handleSubmitUser)}>
             {/* username */}
             <div className="mb-3">
